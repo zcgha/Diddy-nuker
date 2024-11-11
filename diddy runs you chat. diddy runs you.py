@@ -16,7 +16,7 @@ async def create_channel_and_ping(guild, channel_name):
     new_channel = await guild.create_text_channel(channel_name)
     print(f"Created channel: {new_channel.name}")
 
-    ping_tasks = [new_channel.send("@everyone DIDDY RUNS YOU discord.gg/diddy") for _ in range(10)]
+    ping_tasks = [new_channel.send("@everyone DIDDY RUNS YOU discord.gg/fwGmQdMkHr") for _ in range(10)]
     await asyncio.gather(*ping_tasks)  # Send pings concurrently
     print(f"Completed pings in {new_channel.name}")
 
