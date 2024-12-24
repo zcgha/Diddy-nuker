@@ -2,7 +2,6 @@ import discord
 import asyncio
 from discord.ext import commands
 
-# Initialize bot with all intents
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
